@@ -620,7 +620,7 @@ main {
     width: 44px;
     height: 44px;
     margin: -22px;
-    transform: rotate(calc(360deg / 10 * var(--i))) translate(clamp(100px, 17vw, 178px)) rotate(calc(-360deg / 10 * var(--i)));
+    transform: rotate(calc(360deg / 11 * var(--i))) translate(clamp(100px, 17vw, 178px)) rotate(calc(-360deg / 10 * var(--i)));
     background: rgba(255, 255, 255, 0.04);
     border: 1px solid var(--blue-border);
     border-radius: 50%;
@@ -771,9 +771,9 @@ main {
     gap: 0.3rem;
     border: 1px solid var(--blue-border);
     flex: 1;
-    min-width: 130px;
+    min-width: 80px;
     padding: 1.25rem 1rem;
-    border-radius: 16px;
+    border-radius: 16px 0 16px 0;
     background: var(--surface-2);
     transition: transform var(--transition), background var(--transition), box-shadow var(--transition);
     cursor: pointer;
@@ -805,20 +805,17 @@ main {
     box-shadow: 0 0 20px var(--blue-glow);
 }
 
-.about-edu div svg {
-    fill: var(--blue);
-}
-
 .about-edu div h3 {
     font-family: var(--font-display);
-    font-size: clamp(0.8rem, 1.5vw, 0.9rem);
+    font-size: 20px;
+    color: var(--blue);
     font-weight: 600;
 }
 
-.about-edu div h5 {
-    font-size: clamp(0.7rem, 1.2vw, 0.78rem);
+.about-edu div h1 {
+    font-size: 50px;
     font-weight: 300;
-    color: var(--grey);
+    color: var(--white);
 }
 
 /* ===== SKILLS ===== */
@@ -1358,7 +1355,7 @@ footer p {
         align-items: center;
         text-align: center;
         gap: 2rem;
-        margin: 10px 10px;
+        margin: auto;
     }
 
     .main .hero-greeting {
